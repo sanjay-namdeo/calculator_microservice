@@ -1,0 +1,44 @@
+version: "3"
+services:
+
+  server:
+    build:
+        context: ./server
+    container_name: microservice-server
+    ports:
+      - "8761:8761"
+
+  sum:
+    build:
+        context: ./sum
+    container_name: microservice-sum
+    ports:
+      - "8082:8082"
+
+  subtract:
+    build:
+        context: ./subtract
+    container_name: microservice-subtract
+    ports:
+      - "8083:8083"
+
+  multiple:
+    build:
+        context: ./multiple
+    container_name: microservice-multiple
+    ports:
+      - "8084:8084"
+
+  division:
+    build:
+        context: ./division
+    container_name: microservice-division
+    ports:
+      - "8085:8085"
+
+  calculator:
+    build:
+        context: ./calculator
+    container_name: microservice-calculator
+    ports:
+      - "8081:8081"
