@@ -1,0 +1,11 @@
+java -jar calculator_microservice/server/target/server-0.0.1-SNAPSHOT.jar com.calculator.server.ServerApplication
+
+java -jar calculator_microservice/sum/target/sum-0.0.1-SNAPSHOT.jar com.calculator.sum.SumApplication
+
+java -jar calculator_microservice/subtract/target/subtract-0.0.1-SNAPSHOT.jar com.calculator.subtract.SubtractApplication
+
+java -jar calculator_microservice/multiple/target/multiple-0.0.1-SNAPSHOT.jar com.calculator.multiply.MultipleApplication
+
+java -jar calculator_microservice/division/target/division-0.0.1-SNAPSHOT.jar com.calculator.division.DivisionApplication
+
+java -jar calculator_microservice/calculator/target/calculator-0.0.1-SNAPSHOT.jar com.calculator.CalculatorApplication
