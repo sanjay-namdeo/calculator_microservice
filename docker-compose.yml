@@ -56,4 +56,4 @@ services:
       - network-eureka
 
 networks: 
-    network-eureka
+    network-eureka:
