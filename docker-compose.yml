@@ -18,6 +18,9 @@ services:
       - "8082:8082"
     networks: 
       - network-eureka
+    environment:
+      - EUREKA_SERVICE_URL=http://server:8761
+      - EUREKA_INSTANCE_PREFER_IP_ADDRESS=true
 
   subtract:
     build:
@@ -27,6 +30,9 @@ services:
       - "8083:8083"
     networks: 
       - network-eureka
+    environment:
+      - EUREKA_SERVICE_URL=http://server:8761
+      - EUREKA_INSTANCE_PREFER_IP_ADDRESS=true
 
   multiple:
     build:
@@ -36,6 +42,9 @@ services:
       - "8084:8084"
     networks: 
       - network-eureka
+    environment:
+      - EUREKA_SERVICE_URL=http://server:8761
+      - EUREKA_INSTANCE_PREFER_IP_ADDRESS=true
 
   division:
     build:
@@ -45,6 +54,9 @@ services:
       - "8085:8085"
     networks: 
       - network-eureka
+    environment:
+      - EUREKA_SERVICE_URL=http://server:8761
+      - EUREKA_INSTANCE_PREFER_IP_ADDRESS=true
 
   calculator:
     build:
@@ -54,6 +66,9 @@ services:
       - "8081:8081"
     networks: 
       - network-eureka
+    environment:
+      - EUREKA_SERVICE_URL=http://server:8761
+      - EUREKA_INSTANCE_PREFER_IP_ADDRESS=true
 
 networks: 
     network-eureka:
